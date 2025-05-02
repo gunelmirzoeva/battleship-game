@@ -3,6 +3,7 @@ package board;
 import model.Cell;
 import model.Coordinate;
 import model.Ship;
+import util.GameConstants;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,7 +12,7 @@ import java.util.List;
 public class GameBoard {
     private final Cell[][] grid;
     private final List<Ship> ships;
-    private static final int BOARD_SIZE = 10;
+    private static final int BOARD_SIZE = GameConstants.BOARD_SIZE;
 
 
     public GameBoard() {
