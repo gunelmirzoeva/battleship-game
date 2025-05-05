@@ -1,5 +1,6 @@
 package player;
 
+import cli.ConsoleUI;
 import model.Coordinate;
 import model.Ship;
 import model.ShipType;
@@ -10,7 +11,7 @@ import java.util.Scanner;
 public class HumanPlayer extends Player {
     private final Scanner scanner;
 
-    public HumanPlayer(String name) {
+    public HumanPlayer(String name, ConsoleUI consoleUI) {
         super(name);
         this.scanner = new Scanner(System.in);
     }
